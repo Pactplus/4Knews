@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4K News</title>
+    <link href="chip_debit.png" rel="shortcut icon" type="image/x-icon">
+    <!--Linking to external css-->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>4K NEWS</h1>
+        <h2>On Time, On Topic</h2>
+    </header>
+    <section>
+            <nav>
+                <a  href="#">Home</a>
+                <a  href="categories.html">Categories</a>
+                <a  href="#">Photo News</a>
+                <a  href="#">Contacts</a>
+                <a  href="#">Videos</a>
+                <a  href="#">Social Media</a>
+                <a  href="classwork.html">About us</a>
+            </nav>
+    </section>
+    <main>
+        <h3><em>Latest Articles</em></h3>
+        <article>
+            <time datetime="16-01-2016">Friday, Jan 16</time>
+            <h4>International Story</h4>
+            <p>Curabitur pharetra luctus augue, non posuere orci <br>
+            tristique vel. Sed posuere nisi nec lacus ullamcorper,<br>
+            ac vulputate nisl consequat. Nullam sollicitudin nulla vel<br>
+            felis faucibus aliquam. Nunc sit amet velit orci. <br>
+            Proin sed orci fringilla, elementum felis condimentum, convallis<br>
+            augue. Aliquam erat volutpat. Mauris tempus nunc sit amet aliquet bibendum. <br>
+            Praesent vestibulum cursus ex, quis laoreet eros consectetur ac. Ut congue<br>
+            libero quis mauris egestas feugiat. Sed pharetra lorem et magna fringilla, a <br>
+            volutpat nibh sollicitudin. Nullam sagittis sollicitudin urna, sed sollicitudin mauris ornare id.<a href="#_blank">Read more</a>
+            </p>
+        </article>
+        <article>
+            <time datetime="14-01-2016">Wednesday, Jan 14</time>
+            <h4>Finance Story</h4>
+            <p> Nullam tempor mi at libero elementum varius. Sed lobortis lacus feugiat<br>
+            est tristique, nec imperdiet turpis scelerisque. Ut sed urna malesuada, <br>
+            scelerisque dui sit amet, tempus mauris. Integer bibendum egestas urna, a <br>
+            bibendum sem gravida quis. Cras accumsan rhoncus vestibulum. Nam eu blandit leo.<br>
+            Integer at consectetur nunc, et tempus urna. <p>
+                <figure>
+                    <img src="images/chip_debit.png" alt="Debit Card with Chip">
+                    <figcaption>New Debit Cards with Chip-based Security</figcaption>
+                </figure>
+            </p>Integer sit amet sollicitudin elit. <br>
+            Donec nec posuere erat. Sed vestibulum nisl neque, vitae tincidunt ex molestie <br>
+            quis. Nulla fringilla viverra turpis in volutpat. Cras vel orci quis velit efficitur <br>
+            ullamcorper sed eu ex. Nullam vel ex nec lectus imperdiet luctus vitae vel nibh. <br>
+            Donec eleifend velit eros, eu efficitur justo molestie id. In egestas gravida lectus.<br>
+            Ut ipsum odio, suscipit sit amet molestie non, scelerisque sed mi. Aenean sed augue <br>
+            eu arcu faucibus molestie. Sed eget ante gravida, rhoncus velit eu, tempus quam. <br>
+            Sed fermentum at odio sed commodo. Fusce lobortis cursus purus, quis consequat est <br>
+            faucibus at. Etiam massa felis, sodales at sodales sed, iaculis quis arcu.<a href="#_blank">Read more</a>
+            </p>
+        </article>
+        <article>
+            <time datetime="14-01-2016">Wednesday, Jan 14</time>
+            <h4>Technology Story</h4>
+            <p> Morbi eget justo ut velit dapibus malesuada. Nunc elementum,<br>
+            neque quis convallis tempus, lacus ante tristique est, id porta <br>
+            tortor leo eget orci. Suspendisse hendrerit interdum lacus et condimentum.<br>
+            Mauris at ex dignissim, bibendum libero at, fermentum lectus. Maecenas <br>
+            porttitor purus quis augue interdum, eget malesuada neque placerat. Ut hendrerit<br>
+            risus in nibh elementum, quis vestibulum ipsum vulputate. Nulla facilisi. <br>
+            In consectetur et lacus vel tincidunt. Quisque feugiat ipsum et erat rhoncus efficitur.<br>
+            In in augue at enim tempor sollicitudin.<a href="#_blank">Read more</a>
+            </p>
+    </main>
+
+    <h4><em>Sign Up For Our Emails</em></h4>
+    <summary>
+    <form action="" name="formsignup" id="formsignup">
+        <label>Username: <input type="text" name="username" id="username" placeholder="Enter your username"
+        value="" required ><span id="username_error"></span></label><br><br>
+    
+        <label>Password: <input type="password" name="password" id="password" value"" required><span id="password_error" ></span></label><br><br>
+      
+        <label>Confirm Password: <input type="password" name="confirmpassword" id="confirmpassword" value""></label><br><br>
+        
+        <label>Phone Number: <input type="tel" name="number" id="phonenumber" value="" maxlength="11"><span id="phonenumber_error"></span></label><br><br>
+        
+        <label>Postal Code: <input type="tel" name="number" id="postalcode" value="" maxlength="6" required><span id="postal_error"></span></label><br><br>
+        
+        <label for="">E-mail: <input type="email" name="email" id="email" value="" required placeholder="Your Email Address"></label><br><br>
+                    
+        <input type="button" name="submit" id="submit" placeholder=""
+        value="Sign up" onclick="saveUser()">
+              
+    
+    <script type="text/javascript">
+        function saveUser() {
+        var username= document.getElementById("username").value;
+      
+        var password = document.getElementById("password").value;
+        
+        var confirmPassword= document.getElementById("confirmpassword").value;
+       
+        var phoneNumber= document.getElementById("phonenumber").value;
+        var tel= phoneNumber.toString().split('').map(Number);
+      
+        var postalCode= document.getElementById("postalcode").value;
+        
+        var eMail= document.getElementById("email").value;
+        
+            
+        if(username.length < 6) {
+            document.getElementById("username_error").innerHTML="error";
+        } 
+        if (password.length > 0 && password.length < 8) {
+            document.getElementById("password_error").innerHTML="Password must be 8 characters or above";
+             
+        } else if (password.length == 0) {
+            document.getElementById("password_error").innerHTML="Fill out password";
+        } else if (password !== confirmPassword) {
+           alert ("passwords do not match");
+                
+        } else {
+           alert ("password match");
+        }
+                
+        if((tel[0] === 0) && (tel[1] === 9 || tel[1] === 8 || tel[1] === 7 && tel[2] === 0 || tel[2] === 1)){
+            console.log("Proceed");
+        }
+          else if(isNaN(tel)){
+          console.log("check digits");
+        }
+          else{
+          console.log("first number is not zero");
+        }       
+    }
+    </script>
+    </summary>
+</body>
+<hr>
+<footer>
+    (c)PactPlus Technologies 2018
+</footer>
+</html>
