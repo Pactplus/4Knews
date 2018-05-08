@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Check For Animals</title>
+</head>
+<body>
+    <form action="" name="listOfAnimals" id="listOfAnimals">
+        <label>Name of Animal: <input type="text" name="nameofanimal" 
+         id="nameofanimal" placeholder="Enter name of animal" 
+         value="" required >
+        </label>
+        <input type="submit" name="submit" id="submit"
+         value="Search" onclick="checkName()" />
+    </form>
+
+    <script type="text/javascript">
+        
+//Array of animals
+    var listofAnimals = ["Cat", "Polar Bear", "Monkey", "Llama", 
+                        "Parrot", "Dog", "Camel", "Leopard", "Puma",
+                         "Jaguar", "Alligator", "Crocodile", "Antelope",
+                         "Bunny"];
+       
+//Program that runs to check for the animal being searched for
+    function checkName() {
+        var nameofAnimal = document.getElementById("nameofanimal").value;
+
+        if (listofAnimals.includes(nameofAnimal)) {
+            alert("ANIMAL FOUND");
+            } else{
+            alert("NOT FOUND");
+            }
+
+}
+
+    </script>
+</body>
+</html>
